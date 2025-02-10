@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>WINE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+   
+</style>
+<body>
+<style>
+    body {
+        background-image: url("https://camo.githubusercontent.com/e4fb9cb000f67793a81e6a9adb1fb5a626bbd672ebd22a1e7cc708e2a706eb12/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f3837352f312a3261794b6d76565a4359614c506c2d6e6d4c4c7035672e706e67");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: #f2eded;
+    }
+</style>
+<form action="{{ url_for('hello_world') }}" method="post">
+    <h1>Wine Quality Prediction Model</h1>
+    <br>
+    <div>
+        <label for="fa" class='label'><b>fixed acidity : </b></label>
+        <br>
+        <input type="text" class="field" name="fa" id="fa" required>
+        <br>
+        <br>
+        <label for="va" class='label'><b>volatile acidity : </b></label>
+        <br>
+        <input type="text" class="field" name="va" id="va" required>
+        <br>
+        <br>
+        <label for="ca" class='label'><b>citric acid : </b></label>
+        <br>
+        <input type="text" class="field" name="ca" id="ca" required>
+        <br>
+        <br>
+        <label for="rs" class='label'><b>residual sugar : </b></label>
+        <br>
+        <input type="text" class="field" name="rs" id="rs" required>
+        <br>
+        <br>
+        <label for="ch" class='label'><b>chlorides : </b></label>
+        <br>
+        <input type="text" class="field" name="ch" id="ch" required>
+        <br>
+        <br>
+        <label for="fsd" class='label'><b>free sulphur dioxide : </b></label>
+        <br>
+        <input type="text" class="field" name="fsd" id="fsd" required>
+        <br>
+        <br>
+        <label for="tsd" class='label'><b>total sulphur dioxide : </b></label>
+        <br>
+        <input type="text" class="field" name="tsd" id="tsd" required>
+        <br>
+        <br>
+        <label for="density" class='label'><b>density : </b></label>
+        <br>
+        <input type="text" class="field" name="density" id="density" required>
+        <br>
+        <br>
+        <label for="sulphates" class='label'><b>sulphates : </b></label>
+        <br>
+        <input type="text" class="field" name="sulphates" id="sulphates" required>
+        <br>
+        <br>
+        <label for="alcohol" class='label'><b>alcohol : </b></label>
+        <br>
+        <input type="text" class="field" name="alcohol" id="alcohol" required>
+        <br>
+        <br>
+        <label for="quality" class='label'><b>quality : </b></label>
+        <br>
+        <input type="text" class="field" name="quality" id="quality" required>
+        <br>
+        <br>
+        <button type="submit" id="button">Submit</button>
+    </div>
+</form>
+</body>
+</html>
